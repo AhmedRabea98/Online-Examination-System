@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="registration_login.css">
+    <script>  
+         var str = location.search;
+         var an = str.split("&").join(' ').split("=").join(' ').split(' ');
+    </script>
+</head>
+<body>
+    <div class="container-login">
+        <div class="header">
+            <h2>Log In</h2>
+        </div>
+        <form class="form" id="form" action="welcome.html" name="myForm" onsubmit="login(event)">
+            <div class="form-control">
+                <label> Email </label>
+                <input type="email" placeholder="your email" id="e1">
+                <span id="spa2"></span>
+            </div>
+            <div class="form-control">
+                <label> password </label>
+                <input type="password" placeholder="your password" id="p1">
+                <span id="spa3"></span>
+            </div>
+            <button type="submit" class="btn-danger">submit</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
